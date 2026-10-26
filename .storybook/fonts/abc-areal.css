@@ -1,0 +1,3 @@
+/* ABC Areal and ABC Areal Mono (Dinamo) variable fonts, licensed for web use. Axes: wght 400–700, slnt −12–0 (italic), DRKM 0–1. Loaded by the Storybook preview only; @agency packages never ship or inject fonts. */
+@font-face { font-family:"ABC Areal"; src:url("./ABCArealVariable.woff2") format("woff2-variations"), url("./ABCArealVariable.woff2") format("woff2"); font-weight:400 700; font-style:oblique 0deg 12deg; font-display:swap; }
+@font-face { font-family:"ABC Areal Mono"; src:url("./ABCArealMonoVariable.woff2") format("woff2-variations"), url("./ABCArealMonoVariable.woff2") format("woff2"); font-weight:400 700; font-style:oblique 0deg 12deg; font-display:swap; }

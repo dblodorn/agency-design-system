@@ -1,14 +1,1264 @@
 {
   "schemaVersion": 1,
   "release": "0.1.0",
-  "status": "planned",
+  "status": "experimental",
   "sketch": {
+    "document": "design/sketch/agency.sketch",
     "documentId": null,
     "libraryId": null,
-    "mappings": []
+    "sketchVersion": "2026.3.1",
+    "modeStrategy": "Sketch Color Variables have no modes; each semantic token is duplicated per mode under a light/ or dark/ name prefix. The Sketch ID, not the name, is the identity.",
+    "mappings": [
+      {
+        "kind": "swatch",
+        "sketchId": "F8110BD1-1ABD-4091-8AAF-4DF93B3F2A33",
+        "sketchName": "light/color/surface/canvas",
+        "token": "color.surface.canvas",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "A825A24D-D6D3-48CE-8217-0694309B80E0",
+        "sketchName": "dark/color/surface/canvas",
+        "token": "color.surface.canvas",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "354EED4C-0442-4B55-9AF1-7CF7FCB13053",
+        "sketchName": "light/color/surface/raised",
+        "token": "color.surface.raised",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "65F8B43C-0D7A-4C0A-954C-6EDABF4148C7",
+        "sketchName": "dark/color/surface/raised",
+        "token": "color.surface.raised",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "326E09F9-EE17-4613-8BDC-AE1912A0A2F5",
+        "sketchName": "light/color/text/primary",
+        "token": "color.text.primary",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "186DB099-5EEC-41FF-BBB6-F145E64CA971",
+        "sketchName": "dark/color/text/primary",
+        "token": "color.text.primary",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "529F1944-19B7-439E-A507-13CBC403EE77",
+        "sketchName": "light/color/text/secondary",
+        "token": "color.text.secondary",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "C3361049-3BC2-415C-B009-D047FCADD590",
+        "sketchName": "dark/color/text/secondary",
+        "token": "color.text.secondary",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "3E223703-B341-4A25-BC5C-EF646B8297E8",
+        "sketchName": "light/color/border/default",
+        "token": "color.border.default",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "DAE6D458-B70F-47AA-B8B2-C568454ECD59",
+        "sketchName": "dark/color/border/default",
+        "token": "color.border.default",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "C8C48532-37B2-4BE4-9AE3-E377729EF396",
+        "sketchName": "light/color/border/control",
+        "token": "color.border.control",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "C11DED8A-8BE4-4602-9EE0-29013993AA7A",
+        "sketchName": "dark/color/border/control",
+        "token": "color.border.control",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "2BA17AF1-89B8-48CF-8675-382246760ED6",
+        "sketchName": "light/color/action/primary/background",
+        "token": "color.action.primary.background",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "EABD198F-0D91-43DB-ABA4-0AE3D2739490",
+        "sketchName": "dark/color/action/primary/background",
+        "token": "color.action.primary.background",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "E1D86311-F0F3-4FC8-8F6B-5C135CD85C43",
+        "sketchName": "light/color/action/primary/hover",
+        "token": "color.action.primary.hover",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "0DE7EE48-9B18-4BDD-A43D-D94852889379",
+        "sketchName": "dark/color/action/primary/hover",
+        "token": "color.action.primary.hover",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "5B7EB11E-408A-49F4-904C-98C7B9B5036E",
+        "sketchName": "light/color/action/primary/foreground",
+        "token": "color.action.primary.foreground",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "CDF998CA-4F51-4788-B8E2-DD716BFECBD5",
+        "sketchName": "dark/color/action/primary/foreground",
+        "token": "color.action.primary.foreground",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "E6EB52C1-7029-429A-AB58-1A6B70BD989E",
+        "sketchName": "light/color/focus/ring",
+        "token": "color.focus.ring",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "E002B402-710C-476C-B078-D67809958DA5",
+        "sketchName": "dark/color/focus/ring",
+        "token": "color.focus.ring",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "70347B4E-4347-4E4F-8D42-077131295EEA",
+        "sketchName": "light/color/status/danger",
+        "token": "color.status.danger",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "CB86820C-EEBB-4113-BD13-61A3F95E2C65",
+        "sketchName": "dark/color/status/danger",
+        "token": "color.status.danger",
+        "mode": "dark"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "FB36340F-3968-4563-887F-0BDDCC00A147",
+        "sketchName": "light/color/selection/background",
+        "token": "color.selection.background",
+        "mode": "light"
+      },
+      {
+        "kind": "swatch",
+        "sketchId": "087BC545-A978-426F-A088-D8C4FD792494",
+        "sketchName": "dark/color/selection/background",
+        "token": "color.selection.background",
+        "mode": "dark"
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "2B7C115F-25C5-48CB-AC97-C9B90E081B6D",
+        "sketchName": "light/type/body",
+        "mode": "light",
+        "tokens": [
+          "font.family.interface",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "0620403D-326E-4D76-B71A-FB3E13133A0C",
+        "sketchName": "light/type/body-secondary",
+        "mode": "light",
+        "tokens": [
+          "font.family.interface",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.secondary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "9C94C705-4A70-418F-A7B8-A2ABAB7DFF39",
+        "sketchName": "light/type/small",
+        "mode": "light",
+        "tokens": [
+          "font.family.interface",
+          "font.size.small",
+          "color.text.secondary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally",
+          "no line-height token for small; Sketch uses font default"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "D660213D-1706-4831-9BCD-0A01B45EE044",
+        "sketchName": "light/type/title",
+        "mode": "light",
+        "tokens": [
+          "font.family.interface",
+          "font.size.title",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally",
+          "no line-height or weight token for title"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "6F9E496A-A763-40BB-9BBE-14251C6F89C1",
+        "sketchName": "light/type/display",
+        "mode": "light",
+        "tokens": [
+          "font.family.display",
+          "font.size.display",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally",
+          "no line-height or weight token for display"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "7B5F7B33-64A3-4034-A6AD-01C8DCD202D9",
+        "sketchName": "dark/type/body",
+        "mode": "dark",
+        "tokens": [
+          "font.family.interface",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "FEE2EC24-6347-43E3-867F-4C60F9BD441D",
+        "sketchName": "dark/type/body-secondary",
+        "mode": "dark",
+        "tokens": [
+          "font.family.interface",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.secondary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "4699DAF9-EE9E-4ED2-967D-1E6D3ACAEF5F",
+        "sketchName": "dark/type/small",
+        "mode": "dark",
+        "tokens": [
+          "font.family.interface",
+          "font.size.small",
+          "color.text.secondary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally",
+          "no line-height token for small; Sketch uses font default"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "23472CEE-A95F-4C68-A674-E0E8970DEBA2",
+        "sketchName": "dark/type/title",
+        "mode": "dark",
+        "tokens": [
+          "font.family.interface",
+          "font.size.title",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally",
+          "no line-height or weight token for title"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "9DC83092-B7B3-45B1-8DB4-8AAC75C0C067",
+        "sketchName": "dark/type/display",
+        "mode": "dark",
+        "tokens": [
+          "font.family.display",
+          "font.size.display",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally",
+          "no line-height or weight token for display"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "DF888A50-FB91-421D-BC62-D5B133BFB9B4",
+        "sketchName": "light/surface/canvas",
+        "mode": "light",
+        "tokens": [
+          "color.surface.canvas"
+        ],
+        "cssSource": null,
+        "notes": []
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "41F68215-DF59-4460-BD82-A486C5377BAA",
+        "sketchName": "light/surface/panel",
+        "mode": "light",
+        "tokens": [
+          "color.surface.raised",
+          "color.border.default"
+        ],
+        "cssSource": "Dialog.content",
+        "notes": [
+          "radius.large is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "A0EC053F-1716-497B-90C8-3963C276EF7A",
+        "sketchName": "light/control/field",
+        "mode": "light",
+        "tokens": [
+          "color.surface.raised",
+          "color.border.control"
+        ],
+        "cssSource": "TextField.input",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "AA914FF9-25FA-4E80-BA4B-845D637FFDE7",
+        "sketchName": "light/control/field-invalid",
+        "mode": "light",
+        "tokens": [
+          "color.surface.raised",
+          "color.status.danger"
+        ],
+        "cssSource": "TextField.input[aria-invalid='true']",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "64636497-A90C-4EDF-8DB0-243DF5DFE58A",
+        "sketchName": "light/action/primary",
+        "mode": "light",
+        "tokens": [
+          "color.action.primary.background"
+        ],
+        "cssSource": "Button[data-variant='primary']",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "AC94C8E3-6FF5-40B7-88E1-955EC43E57A9",
+        "sketchName": "light/action/primary-hover",
+        "mode": "light",
+        "tokens": [
+          "color.action.primary.hover"
+        ],
+        "cssSource": "Button[data-variant='primary']:hover",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "A5E15206-704B-4609-80E8-25D6963519F5",
+        "sketchName": "light/action/secondary",
+        "mode": "light",
+        "tokens": [
+          "color.surface.raised",
+          "color.border.control"
+        ],
+        "cssSource": "Button[data-variant='secondary']",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "51BE8AF9-2EFF-4C8D-8462-01C4D0F1CD64",
+        "sketchName": "light/focus/ring",
+        "mode": "light",
+        "tokens": [
+          "color.focus.ring"
+        ],
+        "cssSource": ":focus-visible outline",
+        "notes": [
+          "outline-offset 3px has no Sketch equivalent; drawn as a 2px outside border",
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "64636917-76E3-4F29-B452-CED15908B0BC",
+        "sketchName": "dark/surface/canvas",
+        "mode": "dark",
+        "tokens": [
+          "color.surface.canvas"
+        ],
+        "cssSource": null,
+        "notes": []
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "027B24A2-94D0-4BD5-8527-5068B7B5BF20",
+        "sketchName": "dark/surface/panel",
+        "mode": "dark",
+        "tokens": [
+          "color.surface.raised",
+          "color.border.default"
+        ],
+        "cssSource": "Dialog.content",
+        "notes": [
+          "radius.large is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "446BCBBF-E98D-49AB-9E43-8F3361E7276A",
+        "sketchName": "dark/control/field",
+        "mode": "dark",
+        "tokens": [
+          "color.surface.raised",
+          "color.border.control"
+        ],
+        "cssSource": "TextField.input",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "B14260B8-FE1A-4320-B4D0-4B055904A643",
+        "sketchName": "dark/control/field-invalid",
+        "mode": "dark",
+        "tokens": [
+          "color.surface.raised",
+          "color.status.danger"
+        ],
+        "cssSource": "TextField.input[aria-invalid='true']",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "0A6E085F-66B0-4D79-AE2C-971E93C8EED1",
+        "sketchName": "dark/action/primary",
+        "mode": "dark",
+        "tokens": [
+          "color.action.primary.background"
+        ],
+        "cssSource": "Button[data-variant='primary']",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "B09F7DB1-11E7-4EE4-B0FC-842EB57C217B",
+        "sketchName": "dark/action/primary-hover",
+        "mode": "dark",
+        "tokens": [
+          "color.action.primary.hover"
+        ],
+        "cssSource": "Button[data-variant='primary']:hover",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "C86F1D34-B08B-473A-801A-6FDFF178F56F",
+        "sketchName": "dark/action/secondary",
+        "mode": "dark",
+        "tokens": [
+          "color.surface.raised",
+          "color.border.control"
+        ],
+        "cssSource": "Button[data-variant='secondary']",
+        "notes": [
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "layerStyle",
+        "sketchId": "4D79BDA9-4708-4AF2-881E-5E78B3BD2E95",
+        "sketchName": "dark/focus/ring",
+        "mode": "dark",
+        "tokens": [
+          "color.focus.ring"
+        ],
+        "cssSource": ":focus-visible outline",
+        "notes": [
+          "outline-offset 3px has no Sketch equivalent; drawn as a 2px outside border",
+          "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "E3506CDC-C951-4C86-A5C1-0C84EF62FAA0",
+        "sketchName": "light/type/numeric",
+        "mode": "light",
+        "tokens": [
+          "font.family.numeric",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "51BF5086-A394-4EF6-942B-6B3134AFA266",
+        "sketchName": "dark/type/numeric",
+        "mode": "dark",
+        "tokens": [
+          "font.family.numeric",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      }
+    ],
+    "unsupported": {
+      "tokens": [
+        "space.0",
+        "space.1",
+        "space.2",
+        "space.3",
+        "space.4",
+        "space.5",
+        "space.6",
+        "space.7",
+        "space.8",
+        "radius.small",
+        "radius.medium",
+        "radius.large",
+        "radius.pill",
+        "font.family.mono",
+        "motion.duration.feedback",
+        "motion.duration.enter",
+        "motion.duration.exit",
+        "motion.easing.standard",
+        "control.height.compact",
+        "control.height.comfortable",
+        "control.height.spacious",
+        "layer.popover",
+        "layer.dialog",
+        "layer.toast"
+      ],
+      "rawValuesInComponentCss": [
+        "Button font-weight: 600 (no font.weight token)",
+        "Dialog overlay background rgb(0 0 0 / .45) (no scrim token)",
+        "Dialog box-shadow 0 24px 80px rgb(0 0 0 / .2) (no elevation token)",
+        "focus outline-offset: 3px (no token; not representable in Sketch)"
+      ]
+    }
   },
   "figma": {
-    "fileKey": null,
-    "mappings": []
+    "fileKey": "WGrzZhtAquV2UHb5iklr1u",
+    "fileUrl": "https://www.figma.com/design/WGrzZhtAquV2UHb5iklr1u",
+    "plan": "professional",
+    "modeStrategy": "Semantic colours are one Color collection with Light and Dark modes aliasing a hidden Reference collection, mirroring tokens.json and modes.json. Every variable carries WEB code syntax var(--agency-...).",
+    "mappings": [
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:3",
+        "figmaName": "color/paper",
+        "collection": "Reference",
+        "token": "reference.color.paper",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:4",
+        "figmaName": "color/white",
+        "collection": "Reference",
+        "token": "reference.color.white",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:5",
+        "figmaName": "color/ink",
+        "collection": "Reference",
+        "token": "reference.color.ink",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:6",
+        "figmaName": "color/muted",
+        "collection": "Reference",
+        "token": "reference.color.muted",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:7",
+        "figmaName": "color/line",
+        "collection": "Reference",
+        "token": "reference.color.line",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:8",
+        "figmaName": "color/blue",
+        "collection": "Reference",
+        "token": "reference.color.blue",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:9",
+        "figmaName": "color/blueDeep",
+        "collection": "Reference",
+        "token": "reference.color.blueDeep",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:10",
+        "figmaName": "color/blueSoft",
+        "collection": "Reference",
+        "token": "reference.color.blueSoft",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:11",
+        "figmaName": "color/night",
+        "collection": "Reference",
+        "token": "reference.color.night",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:12",
+        "figmaName": "color/panel",
+        "collection": "Reference",
+        "token": "reference.color.panel",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:13",
+        "figmaName": "color/lightText",
+        "collection": "Reference",
+        "token": "reference.color.lightText",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:14",
+        "figmaName": "color/nightMuted",
+        "collection": "Reference",
+        "token": "reference.color.nightMuted",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:15",
+        "figmaName": "color/nightLine",
+        "collection": "Reference",
+        "token": "reference.color.nightLine",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:16",
+        "figmaName": "color/nightBlue",
+        "collection": "Reference",
+        "token": "reference.color.nightBlue",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:17",
+        "figmaName": "color/nightBlueHover",
+        "collection": "Reference",
+        "token": "reference.color.nightBlueHover",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:18",
+        "figmaName": "color/danger",
+        "collection": "Reference",
+        "token": "reference.color.danger",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:19",
+        "figmaName": "color/dangerDark",
+        "collection": "Reference",
+        "token": "reference.color.dangerDark",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:21",
+        "figmaName": "color/surface/canvas",
+        "collection": "Color",
+        "token": "color.surface.canvas",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:22",
+        "figmaName": "color/surface/raised",
+        "collection": "Color",
+        "token": "color.surface.raised",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:23",
+        "figmaName": "color/text/primary",
+        "collection": "Color",
+        "token": "color.text.primary",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:24",
+        "figmaName": "color/text/secondary",
+        "collection": "Color",
+        "token": "color.text.secondary",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:25",
+        "figmaName": "color/border/default",
+        "collection": "Color",
+        "token": "color.border.default",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:26",
+        "figmaName": "color/border/control",
+        "collection": "Color",
+        "token": "color.border.control",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:27",
+        "figmaName": "color/action/primary/background",
+        "collection": "Color",
+        "token": "color.action.primary.background",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:28",
+        "figmaName": "color/action/primary/hover",
+        "collection": "Color",
+        "token": "color.action.primary.hover",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:29",
+        "figmaName": "color/action/primary/foreground",
+        "collection": "Color",
+        "token": "color.action.primary.foreground",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:30",
+        "figmaName": "color/focus/ring",
+        "collection": "Color",
+        "token": "color.focus.ring",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:31",
+        "figmaName": "color/status/danger",
+        "collection": "Color",
+        "token": "color.status.danger",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:32",
+        "figmaName": "color/selection/background",
+        "collection": "Color",
+        "token": "color.selection.background",
+        "modes": [
+          "Light",
+          "Dark"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:34",
+        "figmaName": "space/0",
+        "collection": "Dimension",
+        "token": "space.0",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:35",
+        "figmaName": "space/1",
+        "collection": "Dimension",
+        "token": "space.1",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:36",
+        "figmaName": "space/2",
+        "collection": "Dimension",
+        "token": "space.2",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:37",
+        "figmaName": "space/3",
+        "collection": "Dimension",
+        "token": "space.3",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:38",
+        "figmaName": "space/4",
+        "collection": "Dimension",
+        "token": "space.4",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:39",
+        "figmaName": "space/5",
+        "collection": "Dimension",
+        "token": "space.5",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:40",
+        "figmaName": "space/6",
+        "collection": "Dimension",
+        "token": "space.6",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:41",
+        "figmaName": "space/7",
+        "collection": "Dimension",
+        "token": "space.7",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:42",
+        "figmaName": "space/8",
+        "collection": "Dimension",
+        "token": "space.8",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:43",
+        "figmaName": "radius/small",
+        "collection": "Dimension",
+        "token": "radius.small",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:44",
+        "figmaName": "radius/medium",
+        "collection": "Dimension",
+        "token": "radius.medium",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:45",
+        "figmaName": "radius/large",
+        "collection": "Dimension",
+        "token": "radius.large",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:46",
+        "figmaName": "radius/pill",
+        "collection": "Dimension",
+        "token": "radius.pill",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:47",
+        "figmaName": "font/size/small",
+        "collection": "Dimension",
+        "token": "font.size.small",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:48",
+        "figmaName": "font/size/body",
+        "collection": "Dimension",
+        "token": "font.size.body",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:49",
+        "figmaName": "font/size/title",
+        "collection": "Dimension",
+        "token": "font.size.title",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:50",
+        "figmaName": "font/size/display",
+        "collection": "Dimension",
+        "token": "font.size.display",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:51",
+        "figmaName": "control/height/compact",
+        "collection": "Dimension",
+        "token": "control.height.compact",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:52",
+        "figmaName": "control/height/comfortable",
+        "collection": "Dimension",
+        "token": "control.height.comfortable",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:53",
+        "figmaName": "control/height/spacious",
+        "collection": "Dimension",
+        "token": "control.height.spacious",
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:54",
+        "figmaName": "font/lineHeight/body",
+        "collection": "Dimension",
+        "token": "font.lineHeight.body",
+        "modes": [
+          "Value"
+        ],
+        "notes": [
+          "Figma binds pixels: 22.5 = font.size.body x 1.5; the code token is unitless"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:56",
+        "figmaName": "font/family/interface",
+        "collection": "Typography",
+        "token": "font.family.interface",
+        "modes": [
+          "Value"
+        ],
+        "notes": [
+          "First family of the code fallback stack"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:57",
+        "figmaName": "font/family/display",
+        "collection": "Typography",
+        "token": "font.family.display",
+        "modes": [
+          "Value"
+        ],
+        "notes": [
+          "First family of the code fallback stack"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:1:58",
+        "figmaName": "font/family/numeric",
+        "collection": "Typography",
+        "token": "font.family.numeric",
+        "modes": [
+          "Value"
+        ],
+        "notes": [
+          "First family of the code fallback stack"
+        ]
+      },
+      {
+        "kind": "variable",
+        "figmaId": "VariableID:3:2",
+        "figmaName": "font/family/mono",
+        "collection": "Typography",
+        "token": "font.family.mono",
+        "modes": [
+          "Value"
+        ],
+        "notes": [
+          "First family of the code fallback stack"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "figmaKey": "56c2eeeb86b866e1655812971fa3cbe68171e591",
+        "figmaName": "type/body",
+        "tokens": [
+          "font.family.interface",
+          "font.size.body",
+          "font.lineHeight.body"
+        ],
+        "notes": [
+          "Typography only; text colour comes from color/text/* variables"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "figmaKey": "9616648fbf62a7c075cd4ca0681531b313a68912",
+        "figmaName": "type/title",
+        "tokens": [
+          "font.family.interface",
+          "font.size.title"
+        ],
+        "notes": [
+          "Typography only; text colour comes from color/text/* variables"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "figmaKey": "8e17bbbb086455f26e00c094e050c9831829b359",
+        "figmaName": "type/small",
+        "tokens": [
+          "font.family.interface",
+          "font.size.small"
+        ],
+        "notes": [
+          "Typography only; text colour comes from color/text/* variables"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "figmaKey": "728493a7c61e03d338c584571a443ef4a0cf2559",
+        "figmaName": "type/display",
+        "tokens": [
+          "font.family.display",
+          "font.size.display"
+        ],
+        "notes": [
+          "Typography only; text colour comes from color/text/* variables"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "figmaKey": "1970627e840fd8fe29a4c60a0613bb4eaf6435ec",
+        "figmaName": "type/numeric",
+        "tokens": [
+          "font.family.numeric",
+          "font.size.body"
+        ],
+        "notes": [
+          "Typography only; text colour comes from color/text/* variables"
+        ]
+      }
+    ],
+    "unsupported": {
+      "tokens": [
+        "motion.duration.feedback",
+        "motion.duration.enter",
+        "motion.duration.exit",
+        "motion.easing.standard",
+        "layer.popover",
+        "layer.dialog",
+        "layer.toast"
+      ],
+      "fonts": "ABC Areal and ABC Areal Mono are not in the Figma cloud font set. Remote use_figma can bind text styles to the font variables (the first bind fails, a retry succeeds) but cannot create or edit text layers in them. Text renders only where the fonts are installed locally.",
+      "rawValuesInComponentCss": [
+        "Button font-weight: 600 (no font.weight token)",
+        "Dialog overlay background rgb(0 0 0 / .45) (no scrim token)",
+        "Dialog box-shadow 0 24px 80px rgb(0 0 0 / .2) (no elevation token)",
+        "focus outline-offset: 3px (no token; not representable in Sketch)"
+      ]
+    }
   }
 }

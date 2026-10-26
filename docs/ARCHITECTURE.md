@@ -21,7 +21,7 @@ org.agency metadata contains status, public/internal use, constraints and reduce
 
 ## React and styling
 
-Initial React support is 19+. esbuild and TypeScript emit ESM, declarations and compiled CSS Modules. Consumers import tokens and styles explicitly. The entry carries use client to preserve interactive safety in RSC apps; server-only exports are future work. Theme context propagates explicit light/dark mode into portaled dialogs. The system does not load fonts or inject resets globally.
+Initial React support is 19+. esbuild and TypeScript emit ESM, declarations and compiled CSS Modules. Consumers import tokens and styles explicitly. The entry carries use client to preserve interactive safety in RSC apps; server-only exports are future work. Theme context propagates explicit light/dark mode into portaled dialogs. The system does not load fonts or inject resets globally. Consumers load their own ABC Areal / ABC Areal Mono files; Storybook's preview loads WOFF2 copies from .storybook/fonts/.
 
 ## Quality
 

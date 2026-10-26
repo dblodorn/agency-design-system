@@ -11,7 +11,8 @@ A branded, agent-friendly application design system for an agency moving into so
 - Reshaped is a coverage and quality benchmark, not a source-code donor or dependency.
 - DTCG token source plus separately documented agency metadata and mode mappings.
 - Sketch first; Figma later. Explicit design/code identity mappings and controlled change proposals.
-- Working name and @agency namespace are provisional. Brand direction, fonts and licensing remain open.
+- Working name and @agency namespace are provisional. Brand direction and package licensing remain open.
+- Fonts: ABC Areal (Dinamo) for interface and display; ABC Areal Mono for numeric/tabular and mono. Licensed for desktop and web use; Storybook self-hosts the web fonts, packages do not ship them.
 
 ## Stage 0 — Working foundation (verified)
 
