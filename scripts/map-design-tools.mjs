@@ -4,13 +4,8 @@ const root = new URL('../', import.meta.url);
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 const mappingsPath = 'packages/catalog/src/design-mappings.json';
 
-// Raw values in component CSS that no token covers. Neither design tool can map them until tokens exist.
-export const rawValuesInComponentCss = [
-  'Button font-weight: 600 (no font.weight token)',
-  'Dialog overlay background rgb(0 0 0 / .45) (no scrim token)',
-  'Dialog box-shadow 0 24px 80px rgb(0 0 0 / .2) (no elevation token)',
-  'focus outline-offset: 3px (no token; not representable in Sketch)',
-];
+// Raw values in component CSS that no token covers. tests/raw-values.test.mjs keeps the tokenized roles empty.
+export const rawValuesInComponentCss = [];
 
 const hex = (v) => '#' + v.components.map((x) => Math.round(x * 255).toString(16).padStart(2, '0')).join('') + Math.round(v.alpha * 255).toString(16).padStart(2, '0');
 const splitMode = (name) => { const [mode, ...rest] = name.split('/'); return { mode, rest: rest.join('/') }; };

@@ -30,7 +30,8 @@
     "npm run test:browser"
   ],
   "limitations": [
-    "Static raw-value enforcement and design-tool synchronization are planned, not implemented.",
-    "This release has four experimental component contracts only."
+    "Raw-value checks cover only font weight, focus outline, box shadow and overlay background in component CSS; broader static enforcement is planned.",
+    "Design-tool mappings cover tokens only (Sketch and Figma); no component symbols are mapped.",
+    "This release has ten experimental component contracts: Button, TextField, Dialog, Theme, Field, Checkbox, Select, Tabs, Popover and DropdownMenu."
   ]
 }

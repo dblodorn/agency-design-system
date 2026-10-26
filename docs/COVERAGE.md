@@ -14,29 +14,29 @@ Reshaped catalog is the breadth benchmark, not a parity or licensing claim. Chec
 | Calendar | Evaluate date engine | Planned |
 | Card | Custom | Planned |
 | Carousel | Evaluate carousel engine | Planned |
-| Checkbox | Radix Checkbox | Planned |
+| Checkbox | Radix Checkbox | Experimental |
 | Context menu | Radix Context Menu | Planned |
 | Divider | Radix Separator | Planned |
-| Dropdown menu | Radix Dropdown Menu | Planned |
+| Dropdown menu | Radix Dropdown Menu | Experimental |
 | File upload | Native input plus upload interaction | Planned |
 | Link | Native anchor plus framework adapters | Planned |
 | Loader | Custom | Planned |
 | Loader text | Custom | Planned |
-| Menu item | Parent menu primitive | Planned |
+| Menu item | Parent menu primitive | Experimental (DropdownMenuItem; checkbox, radio and submenu items planned) |
 | Modal | Radix Dialog / Alert Dialog | Experimental |
 | Number field | Evaluate localized numeric entry | Planned |
 | Pagination | Native navigation | Planned |
 | Pin field | Evaluate Radix preview OTP | Planned |
-| Popover | Radix Popover | Planned |
+| Popover | Radix Popover | Experimental |
 | Progress bar | Radix Progress | Planned |
 | Progress indicator | Custom stepper | Planned |
 | Radio | Radix Radio Group | Planned |
-| Select | Radix Select | Planned |
+| Select | Radix Select | Experimental |
 | Skeleton | Custom | Planned |
 | Slider | Radix Slider | Planned |
 | Switch | Radix Switch | Planned |
 | Table | Native table; separate advanced layer | Planned |
-| Tabs | Radix Tabs | Planned |
+| Tabs | Radix Tabs | Experimental |
 | Text area | Native textarea | Planned |
 | Text field | Native input | Experimental |
 | Toast | Radix Toast | Planned |
@@ -46,7 +46,7 @@ Reshaped catalog is the breadth benchmark, not a parity or licensing claim. Chec
 
 ## Supporting utilities
 
-Theme is experimental. Planned: provider, actionable composition, container/grid/view, content/icon transitions, dismissible, expandable (Radix Collapsible), flyout, field context, responsive visibility, native hidden inputs, visually hidden (Radix), icon, image, overlay, resizable panels and scroll area (Radix). Internal hooks will be added only where existing behavior does not cover the need.
+Theme and Field (label, description and error composition with useFieldControl) are experimental. Planned: provider, actionable composition, container/grid/view, content/icon transitions, dismissible, expandable (Radix Collapsible), flyout, responsive visibility, native hidden inputs, visually hidden (Radix), icon, image, overlay, resizable panels and scroll area (Radix). Internal hooks will be added only where existing behavior does not cover the need.
 
 ## Additional capabilities
 

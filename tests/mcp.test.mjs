@@ -12,6 +12,10 @@ test('MCP handshake, discovery, exact contracts and release isolation', async ()
     const get=async(name,args)=>client.callTool({name,arguments:args});
     const button=await get('get_component',{id:'Button',release:'0.1.0'});
     assert.equal(JSON.parse(button.content[0].text).component.imports[0],'Button');
+    for (const id of ['Field','Checkbox','Select','Tabs','Popover','DropdownMenu']) {
+      const {component}=JSON.parse((await get('get_component',{id,release:'0.1.0'})).content[0].text);
+      assert.equal(component.id,id); assert.equal(component.status,'experimental'); assert.ok(component.imports.length);
+    }
     assert.equal((await get('get_component',{id:'Combobox'})).isError,true);
     assert.equal((await get('get_system',{release:'9.0.0'})).isError,true);
     const result=await get('find_tokens',{query:'color',limit:100});
