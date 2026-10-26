@@ -11,7 +11,7 @@ Future @agency/charts, @agency/media and @agency/expression remain separate to i
 
 ## Tokens
 
-DTCG leaf fields: $type, $value, $description, $extensions. Color values use srgb components; dimensions and durations have explicit units. Aliases use brace references. Current generator supports color, dimension, duration, fontFamily, cubicBezier and number; composite typography/shadows are not supported yet. Alias cycles, type mismatches and missing references fail the build. Full DTCG schema validation is planned.
+DTCG leaf fields: $type, $value, $description, $extensions. Color values use srgb components; dimensions and durations have explicit units. Aliases use brace references. Current generator supports color, dimension, duration, fontFamily, fontWeight, cubicBezier, number and shadow (a shadow's color may alias a color token and resolves per mode); composite typography is not supported yet. Alias cycles, type mismatches and missing references fail the build. Full DTCG schema validation is planned.
 
 org.agency metadata contains status, public/internal use, constraints and reduced-motion guidance. modes.json is a separate internal adapter format keyed by exact token ID. It is not represented as standardized DTCG modes. Every token resolves under each mode; CSS variables are generated with the agency prefix. Density, recipes and complete font-role contracts are future work.
 

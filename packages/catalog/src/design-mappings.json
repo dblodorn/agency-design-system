@@ -574,6 +574,7 @@
     ],
     "unsupported": {
       "tokens": [
+        "color.overlay.scrim",
         "space.0",
         "space.1",
         "space.2",
@@ -588,6 +589,9 @@
         "radius.large",
         "radius.pill",
         "font.family.mono",
+        "font.weight.regular",
+        "font.weight.medium",
+        "font.weight.strong",
         "motion.duration.feedback",
         "motion.duration.enter",
         "motion.duration.exit",
@@ -597,14 +601,12 @@
         "control.height.spacious",
         "layer.popover",
         "layer.dialog",
-        "layer.toast"
+        "layer.toast",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "elevation.floating"
       ],
-      "rawValuesInComponentCss": [
-        "Button font-weight: 600 (no font.weight token)",
-        "Dialog overlay background rgb(0 0 0 / .45) (no scrim token)",
-        "Dialog box-shadow 0 24px 80px rgb(0 0 0 / .2) (no elevation token)",
-        "focus outline-offset: 3px (no token; not representable in Sketch)"
-      ]
+      "rawValuesInComponentCss": []
     }
   },
   "figma": {
@@ -1244,21 +1246,23 @@
     ],
     "unsupported": {
       "tokens": [
+        "color.overlay.scrim",
+        "font.weight.regular",
+        "font.weight.medium",
+        "font.weight.strong",
         "motion.duration.feedback",
         "motion.duration.enter",
         "motion.duration.exit",
         "motion.easing.standard",
         "layer.popover",
         "layer.dialog",
-        "layer.toast"
+        "layer.toast",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "elevation.floating"
       ],
       "fonts": "ABC Areal and ABC Areal Mono are not in the Figma cloud font set. Remote use_figma can bind text styles to the font variables (the first bind fails, a retry succeeds) but cannot create or edit text layers in them. Text renders only where the fonts are installed locally.",
-      "rawValuesInComponentCss": [
-        "Button font-weight: 600 (no font.weight token)",
-        "Dialog overlay background rgb(0 0 0 / .45) (no scrim token)",
-        "Dialog box-shadow 0 24px 80px rgb(0 0 0 / .2) (no elevation token)",
-        "focus outline-offset: 3px (no token; not representable in Sketch)"
-      ]
+      "rawValuesInComponentCss": []
     }
   }
 }

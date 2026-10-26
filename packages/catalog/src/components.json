@@ -131,6 +131,219 @@
         "@agency/tokens/css",
         "@agency/react/styles.css"
       ]
+    },
+    {
+      "id": "Field",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Label, description and error composition for any form control",
+      "package": "@agency/react",
+      "imports": [
+        "Field",
+        "useFieldControl"
+      ],
+      "props": {
+        "label": "required ReactNode",
+        "description": "ReactNode",
+        "error": "ReactNode",
+        "id": "string",
+        "children": "one control that reads useFieldControl()"
+      },
+      "example": "<Field label=\"Budget\" description=\"Excludes tax.\"><BudgetInput /></Field>",
+      "rules": [
+        "Controls inside a Field spread useFieldControl().control (id, aria-describedby, aria-invalid).",
+        "Controls that are not labelable elements also set aria-labelledby={useFieldControl().labelId}.",
+        "Preserves external aria-describedby IDs before description and error.",
+        "className styles the outer field; internal DOM selectors are private."
+      ],
+      "slots": [
+        "label",
+        "control",
+        "description",
+        "error"
+      ],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "Checkbox",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Labelled checkbox with checked, unchecked and indeterminate states",
+      "package": "@agency/react",
+      "imports": [
+        "Checkbox"
+      ],
+      "props": {
+        "label": "required ReactNode",
+        "description": "ReactNode",
+        "error": "ReactNode",
+        "checked": [
+          true,
+          false,
+          "indeterminate"
+        ],
+        "defaultChecked": "boolean",
+        "onCheckedChange": "(checked: boolean | \"indeterminate\") => void",
+        "name": "string",
+        "value": "string (default on)",
+        "disabled": "boolean",
+        "required": "boolean"
+      },
+      "example": "<Checkbox name=\"terms\" label=\"I agree to the terms\" />",
+      "rules": [
+        "Always supply a visible label; clicking it toggles the checkbox.",
+        "Use indeterminate only for a parent that summarises mixed children.",
+        "Submits value (default on) only when checked.",
+        "Not a switch: use Checkbox for form choices that apply on submit."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "Select",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Labelled single-value select with a themed listbox",
+      "package": "@agency/react",
+      "imports": [
+        "Select",
+        "SelectItem",
+        "SelectGroup",
+        "SelectSeparator"
+      ],
+      "props": {
+        "label": "required ReactNode",
+        "description": "ReactNode",
+        "error": "ReactNode",
+        "placeholder": "ReactNode",
+        "value": "string",
+        "defaultValue": "string",
+        "onValueChange": "(value: string) => void",
+        "name": "string",
+        "disabled": "boolean",
+        "required": "boolean",
+        "SelectItem": "value: string, disabled?: boolean",
+        "SelectGroup": "label: ReactNode"
+      },
+      "example": "<Select name=\"currency\" label=\"Currency\" placeholder=\"Choose a currency\"><SelectItem value=\"EUR\">Euro (EUR)</SelectItem><SelectItem value=\"USD\">US dollar (USD)</SelectItem></Select>",
+      "rules": [
+        "For short, known lists; searchable or long lists need a combobox (planned, not implemented).",
+        "Item values are strings; do not use an empty string value.",
+        "Wrap in Theme so the portaled listbox keeps the scoped colour mode.",
+        "Not for actions: use DropdownMenu."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "Tabs",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Tablist and panels with Radix keyboard navigation",
+      "package": "@agency/react",
+      "imports": [
+        "TabsRoot",
+        "TabsList",
+        "TabsTrigger",
+        "TabsContent"
+      ],
+      "props": {
+        "TabsRoot": "Radix Tabs.Root props (value, defaultValue, onValueChange, orientation, activationMode)",
+        "TabsList": "Radix Tabs.List props; supply aria-label",
+        "TabsTrigger": "value: string, disabled?: boolean",
+        "TabsContent": "value: string"
+      },
+      "example": "<TabsRoot defaultValue=\"overview\"><TabsList aria-label=\"Project sections\"><TabsTrigger value=\"overview\">Overview</TabsTrigger><TabsTrigger value=\"invoices\">Invoices</TabsTrigger></TabsList><TabsContent value=\"overview\">…</TabsContent><TabsContent value=\"invoices\">…</TabsContent></TabsRoot>",
+      "rules": [
+        "Give TabsList an accessible name.",
+        "Every TabsTrigger value has a matching TabsContent.",
+        "Use activationMode=\"manual\" when switching panels is expensive.",
+        "Not for navigation between routes: use links."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "Popover",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Non-modal anchored floating content",
+      "package": "@agency/react",
+      "imports": [
+        "PopoverRoot",
+        "PopoverTrigger",
+        "PopoverAnchor",
+        "PopoverContent",
+        "PopoverClose"
+      ],
+      "props": {
+        "PopoverRoot": "Radix Popover.Root props",
+        "PopoverContent": "Radix Popover.Content props (sideOffset default 8); supply aria-label or aria-labelledby"
+      },
+      "example": "<PopoverRoot><PopoverTrigger asChild><Button variant=\"secondary\">Filter</Button></PopoverTrigger><PopoverContent aria-label=\"Invoice filter\">…</PopoverContent></PopoverRoot>",
+      "rules": [
+        "Name the content with aria-label or aria-labelledby.",
+        "Non-modal: use Dialog when the user must respond before continuing.",
+        "Wrap in Theme so portaled content keeps the scoped colour mode.",
+        "Use asChild with one ref-capable child."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "DropdownMenu",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Action menu with keyboard navigation and typeahead",
+      "package": "@agency/react",
+      "imports": [
+        "DropdownMenuRoot",
+        "DropdownMenuTrigger",
+        "DropdownMenuContent",
+        "DropdownMenuItem",
+        "DropdownMenuLabel",
+        "DropdownMenuGroup",
+        "DropdownMenuSeparator"
+      ],
+      "props": {
+        "DropdownMenuRoot": "Radix DropdownMenu.Root props",
+        "DropdownMenuContent": "Radix DropdownMenu.Content props (align default start, sideOffset default 4)",
+        "DropdownMenuItem": {
+          "tone": [
+            "neutral",
+            "danger"
+          ],
+          "onSelect": "(event) => void",
+          "disabled": "boolean"
+        }
+      },
+      "example": "<DropdownMenuRoot><DropdownMenuTrigger asChild><Button variant=\"secondary\">Invoice actions</Button></DropdownMenuTrigger><DropdownMenuContent><DropdownMenuItem onSelect={duplicate}>Duplicate</DropdownMenuItem><DropdownMenuItem tone=\"danger\" onSelect={voidInvoice}>Void invoice</DropdownMenuItem></DropdownMenuContent></DropdownMenuRoot>",
+      "rules": [
+        "For commands only; use links for navigation and Select for form values.",
+        "Mark destructive commands with tone=\"danger\" and confirm irreversible ones.",
+        "Wrap in Theme so portaled content keeps the scoped colour mode.",
+        "Checkbox, radio and submenu items are not implemented."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
     }
   ]
 }

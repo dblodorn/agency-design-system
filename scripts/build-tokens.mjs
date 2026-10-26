@@ -10,15 +10,22 @@ export function flatten(tree, prefix = '', result = {}) {
   }
   return result;
 }
+const isAlias = value => typeof value === 'string' && /^\{[^{}]+\}$/.test(value);
 export function resolve(id, tokens, overrides = {}, seen = []) {
   if (seen.includes(id)) throw new Error(`Token cycle: ${[...seen, id].join(' -> ')}`);
   const token = tokens[id];
   if (!token) throw new Error(`Unknown token: ${id}`);
   const value = overrides[id] ?? token.$value;
-  if (typeof value === 'string' && /^\{[^{}]+\}$/.test(value)) {
+  if (isAlias(value)) {
     const target = value.slice(1, -1);
     if (tokens[target]?.$type !== token.$type) throw new Error(`Alias type mismatch: ${id} -> ${target}`);
     return resolve(target, tokens, overrides, [...seen, id]);
+  }
+  // A shadow's colour may alias a color token; resolve it under the same mode overrides.
+  if (token.$type === 'shadow' && isAlias(value.color)) {
+    const target = value.color.slice(1, -1);
+    if (tokens[target]?.$type !== 'color') throw new Error(`Alias type mismatch: ${id}.color -> ${target}`);
+    return { ...value, color: resolve(target, tokens, overrides, [...seen, id]) };
   }
   return value;
 }
@@ -27,7 +34,8 @@ export function cssValue(type, value) {
   if (type === 'dimension' || type === 'duration') return `${value.value}${value.unit}`;
   if (type === 'fontFamily') return value.map(v => v.includes(' ') ? JSON.stringify(v) : v).join(', ');
   if (type === 'cubicBezier') return `cubic-bezier(${value.join(', ')})`;
-  if (type === 'number') return String(value);
+  if (type === 'number' || type === 'fontWeight') return String(value);
+  if (type === 'shadow') return ['offsetX', 'offsetY', 'blur', 'spread'].map(k => cssValue('dimension', value[k])).join(' ') + ' ' + cssValue('color', value.color);
   throw new Error(`Unsupported CSS token type: ${type}`);
 }
 export function build() {

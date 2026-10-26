@@ -1,4 +1,10 @@
 export * from './Button';
+export { Field, useFieldControl, type FieldProps, type FieldControlProps } from './Field';
 export * from './TextField';
 export { DialogRoot, DialogTrigger, DialogClose, DialogContent, DialogTitle, DialogDescription } from './Dialog';
 export * from './Theme';
+export * from './Checkbox';
+export * from './Select';
+export * from './Tabs';
+export * from './Popover';
+export * from './DropdownMenu';

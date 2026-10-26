@@ -11,6 +11,14 @@
     "color.action.primary.foreground": "{reference.color.night}",
     "color.focus.ring": "{reference.color.nightBlue}",
     "color.status.danger": "{reference.color.dangerDark}",
-    "color.selection.background": "{reference.color.panel}"
+    "color.selection.background": "{reference.color.panel}",
+    "color.overlay.scrim": "{reference.color.scrimDark}",
+    "elevation.floating": {
+      "color": "{reference.color.shadowDark}",
+      "offsetX": { "value": 0, "unit": "px" },
+      "offsetY": { "value": 24, "unit": "px" },
+      "blur": { "value": 80, "unit": "px" },
+      "spread": { "value": 0, "unit": "px" }
+    }
   }
 }
