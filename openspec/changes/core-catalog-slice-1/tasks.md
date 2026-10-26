@@ -43,4 +43,4 @@
 
 ## 8. Integration
 
-- [ ] 8.1 Run `npm run check`, `npm run test:browser` and `npm run test:distribution` and record the packed `@agency/react` size. Verify that all three pass locally and in CI on the PR.
+- [x] 8.1 Run `npm run check`, `npm run test:browser` and `npm run test:distribution` and record the packed `@agency/react` size. Verify that all three pass locally and in CI on the PR.
