@@ -1,0 +1,125 @@
+{
+  "fileKey": "WGrzZhtAquV2UHb5iklr1u",
+  "collections": {
+    "Reference": "VariableCollectionId:1:2",
+    "Color": "VariableCollectionId:1:20",
+    "Dimension": "VariableCollectionId:1:33",
+    "Typography": "VariableCollectionId:1:55"
+  },
+  "modes": {
+    "reference": "1:0",
+    "light": "1:1",
+    "dark": "1:2",
+    "dimension": "1:3",
+    "typography": "1:4"
+  },
+  "refIds": {
+    "paper": "VariableID:1:3",
+    "white": "VariableID:1:4",
+    "ink": "VariableID:1:5",
+    "muted": "VariableID:1:6",
+    "line": "VariableID:1:7",
+    "blue": "VariableID:1:8",
+    "blueDeep": "VariableID:1:9",
+    "blueSoft": "VariableID:1:10",
+    "night": "VariableID:1:11",
+    "panel": "VariableID:1:12",
+    "lightText": "VariableID:1:13",
+    "nightMuted": "VariableID:1:14",
+    "nightLine": "VariableID:1:15",
+    "nightBlue": "VariableID:1:16",
+    "nightBlueHover": "VariableID:1:17",
+    "danger": "VariableID:1:18",
+    "dangerDark": "VariableID:1:19"
+  },
+  "semIds": {
+    "color/surface/canvas": "VariableID:1:21",
+    "color/surface/raised": "VariableID:1:22",
+    "color/text/primary": "VariableID:1:23",
+    "color/text/secondary": "VariableID:1:24",
+    "color/border/default": "VariableID:1:25",
+    "color/border/control": "VariableID:1:26",
+    "color/action/primary/background": "VariableID:1:27",
+    "color/action/primary/hover": "VariableID:1:28",
+    "color/action/primary/foreground": "VariableID:1:29",
+    "color/focus/ring": "VariableID:1:30",
+    "color/status/danger": "VariableID:1:31",
+    "color/selection/background": "VariableID:1:32"
+  },
+  "dimIds": {
+    "space/0": "VariableID:1:34",
+    "space/1": "VariableID:1:35",
+    "space/2": "VariableID:1:36",
+    "space/3": "VariableID:1:37",
+    "space/4": "VariableID:1:38",
+    "space/5": "VariableID:1:39",
+    "space/6": "VariableID:1:40",
+    "space/7": "VariableID:1:41",
+    "space/8": "VariableID:1:42",
+    "radius/small": "VariableID:1:43",
+    "radius/medium": "VariableID:1:44",
+    "radius/large": "VariableID:1:45",
+    "radius/pill": "VariableID:1:46",
+    "font/size/small": "VariableID:1:47",
+    "font/size/body": "VariableID:1:48",
+    "font/size/title": "VariableID:1:49",
+    "font/size/display": "VariableID:1:50",
+    "control/height/compact": "VariableID:1:51",
+    "control/height/comfortable": "VariableID:1:52",
+    "control/height/spacious": "VariableID:1:53",
+    "font/lineHeight/body": "VariableID:1:54"
+  },
+  "typIds": {
+    "font/family/interface": "VariableID:1:56",
+    "font/family/display": "VariableID:1:57",
+    "font/family/numeric": "VariableID:1:58",
+    "font/family/mono": "VariableID:3:2"
+  },
+  "textStyles": [
+    {
+      "key": "56c2eeeb86b866e1655812971fa3cbe68171e591",
+      "name": "type/body",
+      "tokens": [
+        "font.family.interface",
+        "font.size.body",
+        "font.lineHeight.body"
+      ]
+    },
+    {
+      "key": "9616648fbf62a7c075cd4ca0681531b313a68912",
+      "name": "type/title",
+      "tokens": [
+        "font.family.interface",
+        "font.size.title"
+      ]
+    },
+    {
+      "key": "8e17bbbb086455f26e00c094e050c9831829b359",
+      "name": "type/small",
+      "tokens": [
+        "font.family.interface",
+        "font.size.small"
+      ]
+    },
+    {
+      "key": "728493a7c61e03d338c584571a443ef4a0cf2559",
+      "name": "type/display",
+      "tokens": [
+        "font.family.display",
+        "font.size.display"
+      ]
+    },
+    {
+      "key": "1970627e840fd8fe29a4c60a0613bb4eaf6435ec",
+      "name": "type/numeric",
+      "tokens": [
+        "font.family.numeric",
+        "font.size.body"
+      ]
+    }
+  ],
+  "specimens": {
+    "light": "3:8",
+    "dark": "3:18"
+  }
+}

@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
 import { Theme } from '../packages/react/src/Theme';
+import './fonts/abc-areal.css';
 import '@agency/tokens/css';
 import '../stories/workbench.css';
 const preview: Preview = {
