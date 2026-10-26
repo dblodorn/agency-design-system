@@ -1,0 +1,16 @@
+{
+  "dark": {
+    "color.surface.canvas": "{reference.color.night}",
+    "color.surface.raised": "{reference.color.panel}",
+    "color.text.primary": "{reference.color.lightText}",
+    "color.text.secondary": "{reference.color.nightMuted}",
+    "color.border.default": "{reference.color.nightLine}",
+    "color.border.control": "{reference.color.nightMuted}",
+    "color.action.primary.background": "{reference.color.nightBlue}",
+    "color.action.primary.hover": "{reference.color.nightBlueHover}",
+    "color.action.primary.foreground": "{reference.color.night}",
+    "color.focus.ring": "{reference.color.nightBlue}",
+    "color.status.danger": "{reference.color.dangerDark}",
+    "color.selection.background": "{reference.color.panel}"
+  }
+}

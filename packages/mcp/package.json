@@ -1,0 +1,20 @@
+{
+  "name": "@agency/mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Read-only, release-scoped design-system MCP",
+  "bin": {
+    "agency-design-system": "src/server.mjs"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "dependencies": {
+    "@agency/tokens": "0.1.0",
+    "@agency/catalog": "0.1.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.0.0"
+  },
+  "license": "UNLICENSED"
+}

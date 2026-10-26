@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "release": "0.1.0",
+  "components": [
+    {
+      "id": "Button",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Native action button",
+      "package": "@agency/react",
+      "imports": [
+        "Button"
+      ],
+      "props": {
+        "variant": [
+          "primary",
+          "secondary",
+          "quiet"
+        ],
+        "size": [
+          "small",
+          "medium"
+        ],
+        "type": [
+          "button",
+          "submit",
+          "reset"
+        ]
+      },
+      "example": "<Button variant=\"primary\">Save changes</Button>",
+      "rules": [
+        "Use a native anchor for navigation.",
+        "Default type is button; opt into submit.",
+        "Supply an accessible name for icon-only content."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "TextField",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Labeled text entry with associated help and error messages",
+      "package": "@agency/react",
+      "imports": [
+        "TextField"
+      ],
+      "props": {
+        "label": "required string",
+        "description": "ReactNode",
+        "error": "string",
+        "type": [
+          "text",
+          "email",
+          "password",
+          "search",
+          "tel",
+          "url"
+        ]
+      },
+      "example": "<TextField label=\"Project name\" description=\"Shown to your team.\" />",
+      "rules": [
+        "Use label for a visible accessible name.",
+        "className styles the outer field; internal DOM selectors are private.",
+        "Not a number, money, date, file or checkbox input.",
+        "Preserves external aria-describedby IDs."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "Dialog",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Compound modal with Radix focus and dismissal behavior",
+      "package": "@agency/react",
+      "imports": [
+        "DialogRoot",
+        "DialogTrigger",
+        "DialogContent",
+        "DialogTitle",
+        "DialogDescription",
+        "DialogClose"
+      ],
+      "props": {
+        "DialogRoot": "Radix Dialog.Root props",
+        "DialogContent": "Radix Dialog.Content props"
+      },
+      "example": "<DialogRoot><DialogTrigger asChild><Button>Edit project</Button></DialogTrigger><DialogContent><DialogTitle>Edit project</DialogTitle><DialogDescription>Update project details.</DialogDescription><DialogClose asChild><Button>Done</Button></DialogClose></DialogContent></DialogRoot>",
+      "rules": [
+        "Provide title, description or an explicit accessible description strategy.",
+        "Provide a visible close action.",
+        "Wrap in Theme so portaled content retains scoped color mode.",
+        "Use asChild with one ref-capable child."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    },
+    {
+      "id": "Theme",
+      "status": "experimental",
+      "release": "0.1.0",
+      "summary": "Explicit scoped color mode, including dialog portals",
+      "package": "@agency/react",
+      "imports": [
+        "Theme"
+      ],
+      "props": {
+        "mode": [
+          "light",
+          "dark"
+        ]
+      },
+      "example": "<Theme mode=\"dark\"><Button>Save changes</Button></Theme>",
+      "rules": [
+        "Import token and component CSS once.",
+        "Theme is explicit; application owns persisted preference and system detection.",
+        "Does not inject global reset or load fonts."
+      ],
+      "slots": [],
+      "styles": [
+        "@agency/tokens/css",
+        "@agency/react/styles.css"
+      ]
+    }
+  ]
+}

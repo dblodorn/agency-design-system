@@ -1,0 +1,9 @@
+.workbench { box-sizing:border-box; min-height:100%; padding:var(--agency-space-5); background:var(--agency-color-surface-canvas); color:var(--agency-color-text-primary); font-family:var(--agency-font-family-interface); font-size:var(--agency-font-size-body); line-height:var(--agency-font-lineHeight-body); }
+.workbench h1 { font-family:var(--agency-font-family-display); font-weight:400; font-size:var(--agency-font-size-display); line-height:1.1; margin:0 0 var(--agency-space-5); }
+.workbench h2 { font-size:var(--agency-font-size-title); }
+.workbench p { max-width:65ch; }
+.workbench .row { display:flex; gap:var(--agency-space-3); align-items:center; flex-wrap:wrap; }
+.workbench .stack { display:grid; gap:var(--agency-space-5); max-width:42rem; }
+.workbench table { border-collapse:collapse; width:100%; }
+.workbench td,.workbench th { padding:var(--agency-space-3); text-align:start; border-bottom:1px solid var(--agency-color-border-default); }
+.workbench code { font-family:var(--agency-font-family-mono); }

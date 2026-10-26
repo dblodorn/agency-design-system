@@ -1,0 +1,14 @@
+{
+  "name": "@agency/catalog",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    "./components": "./src/components.json",
+    "./rules": "./src/rules.json",
+    "./design-mappings": "./src/design-mappings.json"
+  },
+  "license": "UNLICENSED"
+}

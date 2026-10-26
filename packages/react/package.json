@@ -1,0 +1,33 @@
+{
+  "name": "@agency/react",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Agency React components built with native HTML and Radix",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/index.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@agency/tokens": "0.1.0",
+    "@radix-ui/react-dialog": "^1.1.15"
+  },
+  "scripts": {
+    "build": "node build.mjs && tsc -p tsconfig.build.json",
+    "prepack": "npm run build"
+  },
+  "license": "UNLICENSED"
+}

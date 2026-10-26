@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "release": "0.1.0",
+  "brandStatus": "provisional",
+  "principles": [
+    "Precise functional interfaces and expressive experiences share semantic foundations.",
+    "Use existing components before adding variants or local extensions.",
+    "Keep business logic and financial arithmetic outside the design system."
+  ],
+  "agentRules": [
+    "Query available components and their status before implementing.",
+    "Use public semantic tokens; reference palette tokens are internal.",
+    "Do not invent component imports or unsupported props.",
+    "Do not copy Reshaped source or claim API parity.",
+    "Do not use Tailwind as a required dependency.",
+    "Use documented composition and public className entry points; do not target internal selectors.",
+    "Treat experimental APIs as unstable and never describe planned capabilities as implemented.",
+    "For bespoke motion document purpose, interruption and reduced-motion behavior.",
+    "A local exception needs rationale, scope and a review date in the consuming repo."
+  ],
+  "extensionOrder": [
+    "existing pattern",
+    "compose existing components",
+    "shared variant for recurring need",
+    "documented local extension",
+    "shared addition after repeated usage"
+  ],
+  "validation": [
+    "npm run check",
+    "npm run test:browser"
+  ],
+  "limitations": [
+    "Static raw-value enforcement and design-tool synchronization are planned, not implemented.",
+    "This release has four experimental component contracts only."
+  ]
+}

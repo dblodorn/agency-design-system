@@ -1,0 +1,23 @@
+{
+  "name": "@agency/tokens",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Provisional agency tokens, CSS themes and machine catalog",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "exports": {
+    "./css": "./dist/tokens.css",
+    "./catalog": "./dist/catalog.json",
+    "./source": "./src/tokens.json"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "prepack": "node ../../scripts/build-tokens.mjs"
+  },
+  "license": "UNLICENSED"
+}
