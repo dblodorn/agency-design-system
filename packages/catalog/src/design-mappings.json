@@ -328,6 +328,36 @@
         ]
       },
       {
+        "kind": "textStyle",
+        "sketchId": "E3506CDC-C951-4C86-A5C1-0C84EF62FAA0",
+        "sketchName": "light/type/numeric",
+        "mode": "light",
+        "tokens": [
+          "font.family.numeric",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
+        "kind": "textStyle",
+        "sketchId": "51BF5086-A394-4EF6-942B-6B3134AFA266",
+        "sketchName": "dark/type/numeric",
+        "mode": "dark",
+        "tokens": [
+          "font.family.numeric",
+          "font.size.body",
+          "font.lineHeight.body",
+          "color.text.primary"
+        ],
+        "notes": [
+          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
+        ]
+      },
+      {
         "kind": "layerStyle",
         "sketchId": "DF888A50-FB91-421D-BC62-D5B133BFB9B4",
         "sketchName": "light/surface/canvas",
@@ -539,36 +569,6 @@
         "notes": [
           "outline-offset 3px has no Sketch equivalent; drawn as a 2px outside border",
           "radius.small is applied per layer; Sketch shared layer styles do not carry corner radii"
-        ]
-      },
-      {
-        "kind": "textStyle",
-        "sketchId": "E3506CDC-C951-4C86-A5C1-0C84EF62FAA0",
-        "sketchName": "light/type/numeric",
-        "mode": "light",
-        "tokens": [
-          "font.family.numeric",
-          "font.size.body",
-          "font.lineHeight.body",
-          "color.text.primary"
-        ],
-        "notes": [
-          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
-        ]
-      },
-      {
-        "kind": "textStyle",
-        "sketchId": "51BF5086-A394-4EF6-942B-6B3134AFA266",
-        "sketchName": "dark/type/numeric",
-        "mode": "dark",
-        "tokens": [
-          "font.family.numeric",
-          "font.size.body",
-          "font.lineHeight.body",
-          "color.text.primary"
-        ],
-        "notes": [
-          "Sketch takes the first family from the token fallback stack (ABC Areal / ABC Areal Mono), which must be installed locally"
         ]
       }
     ],

@@ -11,6 +11,7 @@
   },
   "scripts": {
     "tokens": "node scripts/build-tokens.mjs",
+    "design:map": "npm run tokens && node scripts/map-design-tools.mjs",
     "build": "npm run tokens && npm run build --workspace @agency/react",
     "storybook": "npm run tokens && storybook dev -p 6006 --no-open",
     "build:storybook": "npm run tokens && storybook build",
