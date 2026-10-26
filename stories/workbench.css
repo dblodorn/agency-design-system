@@ -7,3 +7,19 @@
 .workbench table { border-collapse:collapse; width:100%; }
 .workbench td,.workbench th { padding:var(--agency-space-3); text-align:start; border-bottom:1px solid var(--agency-color-border-default); }
 .workbench code { font-family:var(--agency-font-family-mono); }
+.token-catalog { max-width:80rem; margin-inline:auto; }
+.token-catalog section { margin-block:var(--agency-space-7); }
+.token-colors { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr)); gap:var(--agency-space-4); }
+.token-color { overflow:hidden; border:1px solid var(--agency-color-border-default); border-radius:var(--agency-radius-medium); background:var(--agency-color-surface-raised); }
+.token-color-swatch { display:grid; grid-template-columns:1fr 1fr; height:7rem; border-bottom:1px solid var(--agency-color-border-default); background:repeating-conic-gradient(var(--agency-color-border-default) 0 25%, var(--agency-color-surface-raised) 0 50%) 0 0 / var(--agency-space-4) var(--agency-space-4); }
+.token-color-details { padding:var(--agency-space-4); }
+.token-color-details h3 { margin:0; font-size:var(--agency-font-size-body); overflow-wrap:anywhere; }
+.token-color-details p { margin-block:var(--agency-space-2); color:var(--agency-color-text-secondary); }
+.token-color-values { display:flex; flex-wrap:wrap; gap:var(--agency-space-5); margin-block:var(--agency-space-4) 0; }
+.token-color-values dt { color:var(--agency-color-text-secondary); font-size:var(--agency-font-size-small); }
+.token-color-values dd { margin:0; }
+.token-color-details .token-alias { font-size:var(--agency-font-size-small); overflow-wrap:anywhere; margin-block:var(--agency-space-3) 0; }
+.token-reference { margin-block:var(--agency-space-7); }
+.token-reference summary { cursor:pointer; font-weight:var(--agency-font-weight-strong); padding-block:var(--agency-space-3); }
+.token-reference summary:focus-visible { outline:var(--agency-focus-ring-width) solid var(--agency-color-focus-ring); outline-offset:var(--agency-focus-ring-offset); }
+.token-table-scroll { overflow-x:auto; }
