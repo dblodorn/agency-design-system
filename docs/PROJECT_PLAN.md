@@ -13,6 +13,7 @@ A branded, agent-friendly application design system for an agency moving into so
 - Sketch first; Figma later. Explicit design/code identity mappings and controlled change proposals.
 - Working name and @agency namespace are provisional. Brand direction and package licensing remain open.
 - Fonts: ABC Areal (Dinamo) for interface and display; ABC Areal Mono for numeric/tabular and mono. Licensed for desktop and web use; Storybook self-hosts the web fonts, packages do not ship them.
+- Repository: private GitHub repo dblodorn/agency-design-system, owned by dblodorn.
 
 ## Stage 0 — Working foundation (verified)
 
@@ -62,7 +63,7 @@ Develop curated signature motion and layout recipes. Add Figma Variables/compone
 
 ## Open decisions
 
-Agency name/identity; registry/GitHub owner; font licenses; consumer React versions; dense-grid requirements; charts beyond standard SVG; media streaming formats; supported languages; public vs proprietary licensing.
+Agency name/identity; package registry; consumer React versions; dense-grid requirements; charts beyond standard SVG; media streaming formats; supported languages; public vs proprietary licensing.
 
 ## Risks and controls
 
