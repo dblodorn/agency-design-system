@@ -236,7 +236,8 @@
         "For short, known lists; searchable or long lists need a combobox (planned, not implemented).",
         "Item values are strings; do not use an empty string value.",
         "Wrap in Theme so the portaled listbox keeps the scoped colour mode.",
-        "Not for actions: use DropdownMenu."
+        "Not for actions: use DropdownMenu.",
+        "While open, Radix Select is always modal and aria-hides the rest of the page; full-page axe reports aria-hidden-focus for the hidden trigger. Focus stays in the listbox, so this is a known false positive."
       ],
       "slots": [],
       "styles": [
@@ -321,7 +322,7 @@
         "DropdownMenuSeparator"
       ],
       "props": {
-        "DropdownMenuRoot": "Radix DropdownMenu.Root props",
+        "DropdownMenuRoot": "Radix DropdownMenu.Root props; modal defaults to false (pass modal to block outside interaction and aria-hide the page)",
         "DropdownMenuContent": "Radix DropdownMenu.Content props (align default start, sideOffset default 4)",
         "DropdownMenuItem": {
           "tone": [
@@ -336,6 +337,7 @@
       "rules": [
         "For commands only; use links for navigation and Select for form values.",
         "Mark destructive commands with tone=\"danger\" and confirm irreversible ones.",
+        "Non-modal by default: the page stays in the accessibility tree, focus stays in the menu and Escape closes it; an outside click closes the menu and reaches its target.",
         "Wrap in Theme so portaled content keeps the scoped colour mode.",
         "Checkbox, radio and submenu items are not implemented."
       ],

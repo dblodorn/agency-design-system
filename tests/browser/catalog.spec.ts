@@ -9,7 +9,7 @@ const axe = async (page: Page, selector: string) => {
 // Resolves a CSS custom property to a computed colour in the same theme scope as `el`.
 const tokenColor = (el: Element, variable: string) => { const probe = document.createElement('span'); probe.style.color = `var(${variable})`; el.appendChild(probe); const value = getComputedStyle(probe).color; probe.remove(); return value; };
 
-const stories = ['checkbox--default', 'checkbox--states', 'checkbox--in-form', 'select--default', 'select--invalid', 'select--in-form', 'tabs--default', 'tabs--manual', 'tabs--vertical', 'popover--filter', 'dropdownmenu--actions'];
+const stories = ['checkbox--default', 'checkbox--states', 'checkbox--in-form', 'select--default', 'select--invalid', 'select--in-form', 'tabs--default', 'tabs--manual', 'tabs--vertical', 'popover--filter', 'dropdownmenu--actions', 'dropdownmenu--modal'];
 for (const theme of ['light', 'dark']) test(`slice-1 stories have no axe violations in ${theme}`, async ({ page }) => {
   for (const id of stories) { await story(page, `components-${id}`, theme); await page.locator('#storybook-root > *').first().waitFor(); await axe(page, '#storybook-root'); }
 });
@@ -179,6 +179,23 @@ test.describe('DropdownMenu', () => {
     await page.keyboard.press('Escape');
     await expect(page.getByRole('menu')).toBeHidden(); await expect(trigger).toBeFocused();
     await expect(page.getByLabel('Last action')).toHaveText('none');
+  });
+  test('is non-modal: the page stays exposed and full-page axe passes while open', async ({ page }) => {
+    await story(page, 'components-dropdownmenu--actions');
+    await page.getByRole('button', { name: 'Invoice actions' }).click();
+    await expect(page.getByRole('menu')).toBeVisible();
+    await expect(page.locator('#storybook-root')).not.toHaveAttribute('aria-hidden', 'true');
+    await page.waitForFunction(() => document.getAnimations().every((a) => a.playState !== 'running'));
+    // Same rule set as the Storybook a11y panel: page-level rules do not apply to isolated components.
+    const { violations } = await new AxeBuilder({ page }).disableRules(['region', 'landmark-one-main', 'page-has-heading-one']).analyze();
+    expect(violations).toEqual([]);
+  });
+  test('modal opt-in hides the page and blocks outside pointers', async ({ page }) => {
+    await story(page, 'components-dropdownmenu--modal');
+    await page.getByRole('button', { name: 'Bulk actions' }).click();
+    await expect(page.getByRole('menu')).toBeVisible();
+    await expect(page.locator('#storybook-root')).toHaveAttribute('aria-hidden', 'true');
+    await expect(page.locator('body')).toHaveCSS('pointer-events', 'none');
   });
   test('danger tone, dark theme and axe', async ({ page }) => {
     await story(page, 'components-dropdownmenu--actions', 'dark');

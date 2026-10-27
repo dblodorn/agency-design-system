@@ -25,3 +25,7 @@ export const Actions: StoryObj = { render: function Actions() {
     <p>Last action: <output aria-label="Last action">{last}</output></p>
   </div>;
 } };
+export const Modal: StoryObj = { render: () => <div className="row"><DropdownMenuRoot modal>
+  <DropdownMenuTrigger asChild><Button variant="secondary">Bulk actions</Button></DropdownMenuTrigger>
+  <DropdownMenuContent><DropdownMenuItem>Export selected</DropdownMenuItem><DropdownMenuItem tone="danger">Delete selected</DropdownMenuItem></DropdownMenuContent>
+</DropdownMenuRoot></div> };
