@@ -4,7 +4,11 @@ import type { ComponentPropsWithRef } from 'react';
 import { usePortalTheme } from './ThemeContext';
 import styles from './DropdownMenu.module.css';
 const cx = (base: string, className?: string) => [base, className].filter(Boolean).join(' ');
-export const DropdownMenuRoot = Primitive.Root;
+// Non-modal by default, per the WAI-ARIA menu button pattern: the page stays in the accessibility tree
+// (Radix's modal mode aria-hides it) while focus still stays in the menu and Escape still closes it.
+export function DropdownMenuRoot({ modal = false, ...props }: ComponentPropsWithRef<typeof Primitive.Root>) {
+  return <Primitive.Root {...props} modal={modal} />;
+}
 export const DropdownMenuTrigger = Primitive.Trigger;
 export const DropdownMenuGroup = Primitive.Group;
 export function DropdownMenuContent({ className, sideOffset = 4, align = 'start', collisionPadding = 8, ...props }: ComponentPropsWithRef<typeof Primitive.Content>) {

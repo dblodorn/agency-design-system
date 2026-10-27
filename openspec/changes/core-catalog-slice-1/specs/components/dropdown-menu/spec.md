@@ -28,6 +28,17 @@ Arrow keys SHALL move between enabled items, Home and End SHALL move to the firs
 - **WHEN** the menu is open and the user presses Escape
 - **THEN** the menu closes without running any action and focus returns to the trigger
 
+### Requirement: DropdownMenu is non-modal by default
+DropdownMenu SHALL leave the rest of the page in the accessibility tree while open unless the caller opts into modal behaviour; focus SHALL still stay in the menu until it closes.
+
+#### Scenario: Page stays exposed
+- **WHEN** a DropdownMenu opens with default props
+- **THEN** no ancestor of the trigger is `aria-hidden` and a full-page accessibility scan reports no violations
+
+#### Scenario: Opt into modal
+- **WHEN** a DropdownMenu opens with `modal` set
+- **THEN** content outside the menu is hidden from assistive technology and outside pointer interaction is blocked
+
 ### Requirement: Destructive items are distinguishable
 A menu item marked as destructive SHALL be styled with the danger status colour while keeping the same semantics.
 
